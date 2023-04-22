@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Faith Mecha | Front-end Dev</title>
+</head>
+
+<body>
+
+    <nav class="lg:w-auto sm\:w-96  flex justify-between items-center bg-pink-300 px-4 py-4">
+
+        <div class="flex items-center justify-between h-10 md:h-16">
+            <h class="px-4 py-4  text-4xl font-extrabold">TECHGIRL</h>
+        </div>
+        <div class="">
+            <div class="cursor-pointer z-index-[999] relative">
+                <ion-icon name="menu-outline" onclick="Open(this)" class="w-10 h-10"></ion-icon>
+            </div>
+            <div id="hammm" class="absolute bg-pink-100 opacity-75 z-index-[998] flex justify-center items-center
+        text-3xl h-96 origin-right w-0">
+                <ul>
+                    <li class="font-bold"><a href="#">Home</a></li>
+                    <li class="font-bold"><a href="#">About</a></li>
+                    <li class="font-bold"><a href="#">Skills</a></li>
+                    <li class="font-bold"><a href="#">Projects</a></li>
+                    <li class="font-bold"><a href="#">Contacts</a></li>
+                </ul>
+                <div class="cursor-pointer right-[100px] text-3xl cursor-pointer">
+                    <ion-icon name="close-outline" onclick="Close(this)"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="grid items-center grid-cols-1 md:grid-cols-2 pt-28 md:pt-0 md:h-screen
+    md-overflow-hidden">
+        <div class="order-2 md:order-1 mt-10">
+            <h1 class="text-5xl md:text-7xl font-bold">Hi,</h1>
+            <h2 class="text-5xl md:text-7xl font-bold mt-2">
+                I am <span class="text-black">Faith Mecha</span>
+            </h2>
+            <h2 class="text-2xl md:text-3xl font-bold opacity-70 mt-5 mb-10">Frontend web developer</h2>
+            <a href="#portfolio" class="bg-pink-400 hover: brightness-110 font-bold px-4 py-2.5 rounded shadow-lg
+            ">See my work</a>
+        </div>
+        <div class="rounded-md md:rounded-none h-20 md:h-full overflow-hidden order-1
+        md:order-2 ">
+            <img class="w-full min-h-full object-cover opacity-90 object-center" src="images/girlc.png" alt="profile" />
+        </div>
+    </section>
+    <div class="flex items-center justify-between gap-3 w-full space-y-2">
+        <div class="h-3 w-4 bg-white"></div>
+        <div class="h-3 w-4 bg-white"></div>
+        <div class="h-3 w-4 bg-white"></div>
+
+        <div class="h-3 flex-grow bg-gradient-to-r from bg-white"></div>
+    </div>
+    <!--about section-->
+    <section>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
+            <div class="rounded-full w-48 md:w-64 h-48 md:h-64 overflow-hidden bg-green-600">
+                <img class="w-full h-full object-cover opacity-90" src="images/Snapchat-668849939_1.jpg" alt="img" />
+            </div>
+            <div class="w-full md:w-1/2 text-base md:text-lg text-center md:text-left">
+                <h class="font-bold text-2xl md:text-3xl mb-3">Hi, I'm Faith,</h>
+                <p class="mb-3 opacity-70">
+                    I am a web developer who is passionate about creating web applications. i have studied it at university level and i cant wait to transfer the what ilearnt at school to the real industry.I also do networking.i hold a diploma in information technology.
+                </p>
+                <p class="mb-3 opacity-70">
+                    I am a web developer who is passionate about creating web applications. i have studied it at university level and i cant wait to transfer the what ilearnt at school to the real industry.
+                </p>
+            </div>
+        </div>
+
+        <!--my skills-->
+        <div class="mt-32 text-center">
+            <h class="text-3xl md:text-4xl font-bold mb-14">My Skills</h>
+            <div class="flex flex-wrap items-center justify-center gap-24 md:gap-10">
+                <div class="relative flex items-center justify-center bg-white w-28 h-28 rounded-full cursor-pointer">
+                    <img class="w-16" src="https://th.bing.com/th/id/R.6c8f0a0e377cfa70efcd35ff52893b17?rik=iqhl8JD0f9LLpA&pid=ImgRaw&r=0" alt="html" />
+                </div>
+                <div class="relative flex items-center justify-center bg-white w-28 h-28 rounded-full cursor-pointer">
+                    <img class="w-16" src="https://th.bing.com/th/id/R.c9421be52fe48fdf04839b53f8e9f1d4?rik=mXxNLfvtnGtNEA&pid=ImgRaw&r=0" alt="css" />
+                </div>
+                <div class="relative flex items-center justify-center bg-white w-28 h-28 rounded-full cursor-pointer">
+                    <img class="w-16" src="https://www.vhv.rs/dpng/d/456-4562295_library-of-javascript-icon-graphic-freeuse-png-files.png" alt="javascript" />
+                </div>
+                <div class="relative flex items-center justify-center bg-white w-28 h-28 rounded-full cursor-pointer">
+                    <img class="w-16" src="https://th.bing.com/th/id/OIP.BFV8Gwt5BILa-xv04IK2ngAAAA?pid=ImgDet&rs=1" alt="react" />
+                </div>
+                <div class="relative flex items-center justify-center bg-white w-28 h-28 rounded-full cursor-pointer">
+                    <img class="w-16" src="https://th.bing.com/th/id/OIP.KzMS5eFoux4BEgrZCxrFDwHaHa?pid=ImgDet&rs=1" alt="sql" />
+                </div>
+                <div class="relative flex items-center justify-center bg-white w-28 h-28 rounded-full cursor-pointer">
+                    <img class="w-16" src="https://th.bing.com/th/id/OIP.o7c7ftXCLdQDsfE9NkWCvwHaGb?pid=ImgDet&rs=1" alt="tailwindcss" />
+                </div>
+                <div class="relative flex items-center justify-center bg-white w-28 h-28 rounded-full cursor-pointer">
+                    <img class="w-16" src="https://th.bing.com/th/id/R.c521e7e67222276a6860665a46813cc6?rik=AoUIOAvVTiB1cQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2ffirebase-logo-png-firebase-logo-png-transparent-amp-svg-vector-pluspng-2400x3291.png&ehk=YpYeUgKU5BtUZmTIpsZiQ5pFGAOc5w0Xm5klm2orTIg%3d&risl=&pid=ImgRaw&r=0"
+                        alt="firebase" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--portfolio section-->
+    <section class="pt-32">
+        <h class="text-3xl md:text-4xl text-center font-bold mb-8 md:mb-12">My Portfolio</h>
+        <ul class="w-full md:w-5/6 space-y-10 py-5 px-4">
+            <li class="flex flex-col md:flex-row items-center bg-pink-200 rounded overflow-hidden">
+                <div class="w-full md:w-1/3 h-60">
+                    <img class="h-full w-full object-cover" src="https://www.purbis.com/images/food-order.png" alt="Portfolio" />
+                </div>
+                <div class="w-full md:w-2/3 p-5">
+                    <h3 class="text-3xl font-bold mb-3">RMS</h3>
+                    <p2>
+                        Restaurant management system is an application meant to help the restaurant managers to be able to carry their analytics tasks easier.I will rephrase the whole of this later.With good english.
+                    </p2>
+                    <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                        <a href="#" class="bg-pink-600 flex items-center px-4 py-2 w-max hover:brightness-110">Github</a>
+                        <a href="#" class="bg-purple-600 flex items-center px-4 py-2 w-max hover:brightness-110">Web App</a>
+                    </div>
+                </div>
+            </li>
+            <li class="flex flex-col md:flex-row items-center bg-pink-200 rounded overflow-hidden">
+                <div class="w-full md:w-1/3 h-60">
+                    <img class="h-full w-full object-cover" src="https://i.pinimg.com/originals/69/7c/5a/697c5acf67ffe0bcdf9acc3ed9209d7f.png" alt="Portfolio" />
+                </div>
+                <div class="w-full md:w-2/3 p-5">
+                    <h3 class="text-3xl font-bold mb-3">HRMS</h3>
+                    <p2>
+                        Human resource management system is a web app that is ment to easse the work of HR by capturing all employees data just in a software.I need to write this in a good way,Fluently.
+                    </p2>
+                    <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                        <a href="#" class="bg-pink-600 flex items-center px-4 py-2 w-max hover:brightness-110">Github</a>
+                        <a href="#" class="bg-purple-600 flex items-center px-4 py-2 w-max hover:brightness-110">Web App</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+
+    <footer class="w-full text-center mt-40 bg-white">
+        <section class="flex flex-col gap-12 justify-center py-20">
+            <h4 class="text-xl md:text-2xl font-bold">Contacts</h4>
+            <div class="flex flex-wrap justify-center gap-5 md:gap-10">
+                <a href="#" class="bg-blue-500">
+                    <img class="w-5 h-5" src="images/Snapchat-668849939_1.jpg" alt="twitter" />
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        let ham = document.getElementById('hammm')
+
+        function Open() {
+            ham.classList.add('w-[100%]')
+        }
+
+        function Close() {
+            ham.classList.remove('w-[100%]')
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>
+<!--<div class="flex items-center justify-between gap-3 w-full space-y-2">
+        <div class="h-3 w-4 bg-pink-400"></div>
+        <div class="h-3 w-4 bg-pink-400"></div>
+        <div class="h-3 w-4 bg-pink-400"></div>
+
+        <div class="h-3 flex-grow bg-gradient-to-r from bg-pink-300"></div>
+    </div>-->
