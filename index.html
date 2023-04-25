@@ -17,24 +17,33 @@
         <div class="flex items-center justify-between h-10 md:h-16">
             <h class="px-4 py-4  text-4xl font-extrabold">TECHGIRL</h>
         </div>
-        <div class="">
-            <div class="">
-                <ion-icon name="menu-outline" class="w-10 h-10"></ion-icon>
+
+        <button class="ml-auto menu-button">
+            <ion-icon name="menu-Outline" class=" w-10 h-10"></ion-icon>
+        </button></nav>
+    <div class="m-list hidden">
+        <ul class="flex flex-col z-50 absolute items-center justify-items-center w-1/2 right-0
+        opacity-75 bg-pink-200">
+            <li class="font-bold hover:text-blue-100 mx-4 my-6 md:my-0 py-6">
+                <a class="text-xl" href="#">Home</a></li>
+            <li class="font-bold hover:text-blue-100 mx-4 my-6 md:my-0 py-6">
+                <a class="text-xl" href="#">About</a></li>
+            <li class="font-bold hover:text-blue-700 mx-4 my-6 md:my-0 py-6">
+                <a class="text-xl" href="#">Skills</a></li>
+            <li class="font-bold hover:text-blue-100 mx-4 my-6 md:my-0 py-6">
+                <a class="text-xl" href="#">Projects</a></li>
+            <li class="font-bold hover:text-blue-100 mx-4 my-6 md:my-0 py-6">
+                <a class="text-xl" href="#">Contacts</a></li>
+            <div class="flex flex-row space-x-5 rounded-3xl space-y-2">
+                <li><button class="bg-green-400 text-2xl ">Ytube</button></li>
+                <li><button class="bg-green-400 text-2xl ">Ytube</button></li>
+                <li><button class="bg-green-400 text-2xl ">Ytube</button></li>
             </div>
-            <div id="hammm" class="">
-                <ul>
-                    <li class="font-bold"><a href="#">Home</a></li>
-                    <li class="font-bold"><a href="#">About</a></li>
-                    <li class="font-bold"><a href="#">Skills</a></li>
-                    <li class="font-bold"><a href="#">Projects</a></li>
-                    <li class="font-bold"><a href="#">Contacts</a></li>
-                </ul>
-                <div class="cursor-pointer right-[100px] text-3xl cursor-pointer">
-                    <ion-icon name="close-outline"></ion-icon>
-                </div>
-            </div>
-        </div>
-    </nav>
+        </ul>
+    </div>
+
+
+
 
 
     <section class="grid items-center grid-cols-1 md:grid-cols-2 pt-28 md:pt-0 md:h-screen
@@ -160,6 +169,12 @@
     </footer>
 
     <script>
+        const btn = document.querySelector('button.menu-button');
+        const menu = document.querySelector('.m-list');
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle('hidden');
+        });
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
@@ -171,7 +186,9 @@
         <div class="h-3 w-4 bg-pink-400"></div>
 
         <div class="h-3 flex-grow bg-gradient-to-r from bg-pink-300"></div>
-    </div>let ham = document.getElementById('hammm')
+    </div>
+    
+    let ham = document.getElementById('hammm')
 
         function Open() {
             ham.classList.add('w-[100%]')
@@ -179,4 +196,8 @@
 
         function Close() {
             ham.classList.remove('w-[100%]')
-        }-->
+        }
+        
+        <div class="cursor-pointer right-[100px] text-3xl cursor-pointer">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>-->
