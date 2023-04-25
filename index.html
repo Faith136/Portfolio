@@ -18,11 +18,10 @@
             <h class="px-4 py-4  text-4xl font-extrabold">TECHGIRL</h>
         </div>
         <div class="">
-            <div class="cursor-pointer z-index-[999] relative">
-                <ion-icon name="menu-outline" onclick="Open(this)" class="w-10 h-10"></ion-icon>
+            <div class="">
+                <ion-icon name="menu-outline" class="w-10 h-10"></ion-icon>
             </div>
-            <div id="hammm" class="absolute bg-pink-100 opacity-75 z-index-[998] flex justify-center items-center
-        text-3xl h-96 origin-right w-0">
+            <div id="hammm" class="">
                 <ul>
                     <li class="font-bold"><a href="#">Home</a></li>
                     <li class="font-bold"><a href="#">About</a></li>
@@ -31,7 +30,7 @@
                     <li class="font-bold"><a href="#">Contacts</a></li>
                 </ul>
                 <div class="cursor-pointer right-[100px] text-3xl cursor-pointer">
-                    <ion-icon name="close-outline" onclick="Close(this)"></ion-icon>
+                    <ion-icon name="close-outline"></ion-icon>
                 </div>
             </div>
         </div>
@@ -161,15 +160,6 @@
     </footer>
 
     <script>
-        let ham = document.getElementById('hammm')
-
-        function Open() {
-            ham.classList.add('w-[100%]')
-        }
-
-        function Close() {
-            ham.classList.remove('w-[100%]')
-        }
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
@@ -181,4 +171,12 @@
         <div class="h-3 w-4 bg-pink-400"></div>
 
         <div class="h-3 flex-grow bg-gradient-to-r from bg-pink-300"></div>
-    </div>-->
+    </div>let ham = document.getElementById('hammm')
+
+        function Open() {
+            ham.classList.add('w-[100%]')
+        }
+
+        function Close() {
+            ham.classList.remove('w-[100%]')
+        }-->
