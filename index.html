@@ -23,21 +23,27 @@
         </button></nav>
     <div class="m-list hidden">
         <ul class="flex flex-col z-50 absolute items-center justify-items-center w-1/2 right-0
-        opacity-75 bg-pink-200">
-            <li class="font-bold hover:text-blue-100 mx-4 my-6 md:my-0 py-6">
+        opacity-75 bg-pink-300">
+            <li class="font-bold hover:text-blue-700 mx-4 my-6 md:my-0 py-4">
                 <a class="text-xl" href="#">Home</a></li>
-            <li class="font-bold hover:text-blue-100 mx-4 my-6 md:my-0 py-6">
+            <li class="font-bold hover:text-blue-700 mx-4 my-6 md:my-0 py-4">
                 <a class="text-xl" href="#">About</a></li>
-            <li class="font-bold hover:text-blue-700 mx-4 my-6 md:my-0 py-6">
+            <li class="font-bold hover:text-blue-700 mx-4 my-6 md:my-0 py-4">
                 <a class="text-xl" href="#">Skills</a></li>
-            <li class="font-bold hover:text-blue-100 mx-4 my-6 md:my-0 py-6">
+            <li class="font-bold hover:text-blue-700 mx-4 my-6 md:my-0 py-4">
                 <a class="text-xl" href="#">Projects</a></li>
-            <li class="font-bold hover:text-blue-100 mx-4 my-6 md:my-0 py-6">
+            <li class="font-bold hover:text-blue-700 mx-4 my-6 md:my-0 py-4">
                 <a class="text-xl" href="#">Contacts</a></li>
-            <div class="flex flex-row space-x-5 rounded-3xl space-y-2">
-                <li><button class="bg-green-400 text-2xl ">Ytube</button></li>
-                <li><button class="bg-green-400 text-2xl ">Ytube</button></li>
-                <li><button class="bg-green-400 text-2xl ">Ytube</button></li>
+            <div class="flex flex-row space-x-5">
+                <button class="text-2xl rounded-3xl text-indigo-600 w-10">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </button>
+                <button class="text-2xl rounded-3xl text-indigo-600 w-10">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </button>
+                <button class="text-2xl rounded-3xl text-indigo-600 w-10">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </button>
             </div>
         </ul>
     </div>
@@ -168,13 +174,7 @@
         </section>
     </footer>
 
-    <script>
-        const btn = document.querySelector('button.menu-button');
-        const menu = document.querySelector('.m-list');
-
-        btn.addEventListener("click", () => {
-            menu.classList.toggle('hidden');
-        });
+    <script src="js/main.js">
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
