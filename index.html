@@ -12,7 +12,7 @@
 
 <body>
 
-    <nav class="lg:w-auto sm\:w-96  flex justify-between items-center bg-pink-300 px-4 py-4">
+    <nav class="lg:w-full sm\:w-96 flex justify-between items-center bg-pink-300 px-4 py-4">
 
         <div class="flex items-center justify-between h-10 md:h-16">
             <h class="px-4 py-4  text-4xl font-extrabold">TECHGIRL</h>
@@ -27,13 +27,15 @@
             <li class="font-bold hover:text-blue-700 mx-4 my-6 md:my-0 py-4">
                 <a class="text-xl" href="#">Home</a></li>
             <li class="font-bold hover:text-blue-700 mx-4 my-6 md:my-0 py-4">
-                <a class="text-xl" href="#">About</a></li>
+                <a class="text-xl" href="#About">About</a></li>
             <li class="font-bold hover:text-blue-700 mx-4 my-6 md:my-0 py-4">
-                <a class="text-xl" href="#">Skills</a></li>
+                <a class="text-xl" href="#Skills">Skills</a></li>
             <li class="font-bold hover:text-blue-700 mx-4 my-6 md:my-0 py-4">
-                <a class="text-xl" href="#">Projects</a></li>
+                <a class="text-xl" href="#Projects">Projects</a></li>
             <li class="font-bold hover:text-blue-700 mx-4 my-6 md:my-0 py-4">
-                <a class="text-xl" href="#">Contacts</a></li>
+                <a class="text-xl" href="#Services">Services</a></li>
+            <li class="font-bold hover:text-blue-700 mx-4 my-6 md:my-0 py-4">
+                <a class="text-xl" href="#Contacts">Contacts</a></li>
             <div class="flex flex-row space-x-5">
                 <button class="text-2xl rounded-3xl text-indigo-600 w-10">
                     <ion-icon name="logo-whatsapp"></ion-icon>
@@ -60,7 +62,7 @@
                 I am <span class="text-black">Faith Mecha</span>
             </h2>
             <h2 class="text-2xl md:text-3xl font-bold opacity-70 mt-5 mb-10">Frontend web developer</h2>
-            <a href="#portfolio" class="bg-pink-400 hover: brightness-110 font-bold px-4 py-2.5 rounded shadow-lg
+            <a href="#Projects" class="bg-pink-400 hover: brightness-110 font-bold px-4 py-2.5 rounded shadow-lg
             ">See my work</a>
         </div>
         <div class="rounded-md md:rounded-none h-20 md:h-full overflow-hidden order-1
@@ -76,7 +78,7 @@
         <div class="h-3 flex-grow bg-gradient-to-r from bg-white"></div>
     </div>
     <!--about section-->
-    <section>
+    <section id="About">
         <div class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
             <div class="rounded-full w-48 md:w-64 h-48 md:h-64 overflow-hidden bg-green-600">
                 <img class="w-full h-full object-cover opacity-90" src="images/Snapchat-668849939_1.jpg" alt="img" />
@@ -92,8 +94,9 @@
                 </p>
             </div>
         </div>
-
-        <!--my skills-->
+    </section>
+    <!--my skills-->
+    <section id="Skills">
         <div class="mt-32 text-center">
             <h class="text-3xl md:text-4xl font-bold mb-14">My Skills</h>
             <div class="flex flex-wrap items-center justify-center gap-24 md:gap-10">
@@ -125,8 +128,8 @@
     </section>
 
 
-    <!--portfolio section-->
-    <section class="pt-32">
+    <!--project section-->
+    <section class="pt-32" id="Projects">
         <h class="text-3xl md:text-4xl text-center font-bold mb-8 md:mb-12">My Portfolio</h>
         <ul class="w-full md:w-5/6 space-y-10 py-5 px-4">
             <li class="flex flex-col md:flex-row items-center bg-pink-200 rounded overflow-hidden">
@@ -162,9 +165,13 @@
 
         </ul>
     </section>
-
-    <section class="pt-32">
-        <div class="grid gap-4 grid-cols-3 grid-rows-3 md\:grid-rows-1">
+    <!--services-->
+    <section class="pt-32" id="Services">
+        <div class="flex flex-col items-center justify-items-center space-y-1">
+            <h class="text-4xl font-bold">Services </h>
+            <p class="font-semibold">that i can gladly help with:</p>
+        </div>
+        <div class="grid gap-4 lg:grid-cols-3 lg:grid-rows-3 md:grid-cols-1 md:grid-rows-1">
             <div class="bg-pink-200 rounded-2xl">
                 <h1>
                     <ion-icon name="code-slash-outline" class="text-3xl text-black"></ion-icon>
@@ -175,15 +182,15 @@
             </div>
             <div class="bg-pink-200 rounded-2xl">
                 <h1>
-                    <ion-icon name="code-slash-outline" class="text-3xl text-black"></ion-icon>
+                    <ion-icon name="phone-portrait-outline" class="text-3xl text-black"></ion-icon>
                 </h1>
-                <h class="font-extrabold text-2xl">web dev</h>
+                <h class="font-extrabold text-2xl">Responsive Design</h>
                 <p> Today I spent most of the day researching ways to take advantage of the fact that bottles can be returned for 10 cents in Michigan, but only 5 cents here. Kramer keeps telling me there is no way to make it work, that he has run the numbers
                     on every possible approach, but I just have to believe there's a way to make it.</p>
             </div>
             <div class="bg-pink-200 rounded-2xl">
                 <h1>
-                    <ion-icon name="code-slash-outline" class="text-3xl text-black"></ion-icon>
+                    <ion-icon name="git-merge-outline" class="text-3xl text-black"></ion-icon>
                 </h1>
                 <h class="font-extrabold text-2xl">API Intergration</h>
                 <p> Today I spent most of the day researching ways to take advantage of the fact that bottles can be returned for 10 cents in Michigan, but only 5 cents here. Kramer keeps telling me there is no way to make it work, that he has run the numbers
@@ -194,7 +201,7 @@
     </section>
 
     <footer class="w-full text-center mt-40 bg-white">
-        <section class="flex flex-col gap-12 justify-center py-20">
+        <section class="flex flex-col gap-12 justify-center py-20" id="Contacts">
             <h4 class="text-xl md:text-2xl font-bold">Contacts</h4>
             <div class="flex flex-wrap justify-center gap-5 md:gap-10">
                 <a href="#" class="bg-blue-500">
