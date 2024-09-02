@@ -54,7 +54,7 @@
 
 
 
-    <section class="grid items-center grid-cols-1 md:grid-cols-2 pt-28 md:pt-0 md:h-screen
+    <section class="grid items-center grid-cols-1 bg-gray-200 md:grid-cols-2 pt-28 md:pt-0 md:h-screen
     md-overflow-hidden">
         <div class="order-2 md:order-1 mt-10">
             <h1 class="text-5xl md:text-7xl font-bold">Hi,</h1>
@@ -128,71 +128,80 @@
             </div>
         </div>
     </section>
+<!-- Project Section -->
+<section class="min-h-screen flex flex-col justify-center pt-16 md:pt-32" id="Projects">
+    <div class="flex flex-col items-center space-y-1">
+        <h1 class="text-4xl font-bold">My Portfolio</h1>
+        <p class="font-semibold">Some of my recent projects:</p>
+    </div>
+    <ul class="w-full md:w-5/6 space-y-10 py-5 px-4 mx-auto">
+        <li class="flex flex-col md:flex-row items-center bg-pink-200 rounded overflow-hidden shadow-lg">
+            <div class="w-full md:w-1/3 h-60">
+                <img class="h-full w-full object-cover px-3 rounded-2xl" src="https://th.bing.com/th?id=OIP.o3QdqC8KPfEQfy0ffhm7bgHaDk&w=349&h=168&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Portfolio" />
+            </div>
+            <div class="w-full md:w-2/3 p-5">
+                <h3 class="text-3xl font-bold mb-3">Zomato Clone</h3>
+                <p>
+                    In this project, I developed a full-stack Zomato clone web application, replicating essential features like restaurant discovery, menu browsing, online ordering, and payment processing. The frontend was built with React.js, CSS, React Modal and Bootstrap for a responsive and interactive UI, while the backend used Node.js and Express.js for server-side development and API management. MongoDB was utilized for efficient data storage, and PayPal and M-pesa SDK was integrated for secure payment processing. Used Google Cloud for authentication. Key achievements include handling complex state management in React, implementing robust error handling, and ensuring responsive design across various devices.
+                </p>
+                <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                    <a href="https://github.com/Faith136/Zomato-clone1" target="_blank" class="bg-pink-600 flex items-center px-4 py-2 w-max hover:brightness-110">
+                        <ion-icon name="logo-github"></ion-icon> View Code</a>
+                    <a href="https://zomato-clone1-dusky.vercel.app/" target="_blank" class="bg-purple-600 flex items-center px-4 py-2 w-max hover:brightness-110">Web App</a>
+                </div>
+            </div>
+        </li>
+        <li class="flex flex-col md:flex-row items-center bg-pink-200 rounded overflow-hidden shadow-lg">
+            <div class="w-full md:w-1/3 h-60">
+                <img class="h-full w-full object-cover" src="https://www.purbis.com/images/food-order.png" alt="Portfolio" />
+            </div>
+            <div class="w-full md:w-2/3 p-5">
+                <h3 class="text-3xl font-bold mb-3">Restaurant Management System</h3>
+                <p>
+                    Restaurant management system is an application meant to help the restaurant managers to be able to carry their analytics tasks easier. I developed this project using React.js, Tailwind CSS, and Firebase. It has several modules including authentication, item selection, bill management, and more.
+                </p>
+                <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                    <a href="https://github.com/Faith136/Bwibs" target="_blank" class="bg-pink-600 flex items-center px-4 py-2 w-max hover:brightness-110">
+                        <ion-icon name="logo-github"></ion-icon> View Code</a>
+                    <a href="https://bwibs.vercel.app/" target="_blank" class="bg-purple-600 flex items-center px-4 py-2 w-max hover:brightness-110">Web App</a>
+                </div>
+            </div>
+        </li>
+        <li class="flex flex-col md:flex-row items-center bg-pink-200 rounded overflow-hidden shadow-lg">
+            <div class="w-full md:w-1/3 h-60">
+                <img class="h-full w-full object-cover" src="https://i.pinimg.com/originals/69/7c/5a/697c5acf67ffe0bcdf9acc3ed9209d7f.png" alt="Portfolio" />
+            </div>
+            <div class="w-full md:w-2/3 p-5">
+                <h3 class="text-3xl font-bold mb-3">HRMS</h3>
+                <p>
+                    Human resource management system is a web app that is meant to ease the work of HR by capturing all employees data just in a software. I considered CRUD methods using Firebase and React.js. Currently I am still working on it.
+                </p>
+                <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                    <a href="https://github.com/Faith136/hr" target="_blank" class="bg-pink-600 flex items-center px-4 py-2 w-max hover:brightness-110">
+                        <ion-icon name="logo-github"></ion-icon> View Code</a>
+                    <a href="#" target="_blank" class="bg-purple-600 flex items-center px-4 py-2 w-max hover:brightness-110">Web App</a>
+                </div>
+            </div>
+        </li>
+        <li class="flex flex-col md:flex-row items-center bg-pink-200 rounded overflow-hidden shadow-lg">
+            <div class="w-full md:w-1/3 h-60">
+                <img class="h-full w-full object-cover" src="images/Hospital-Icon-Image.png" alt="Portfolio" />
+            </div>
+            <div class="w-full md:w-2/3 p-5">
+                <h3 class="text-3xl font-bold mb-3">HOSPITAL WEBSITE</h3>
+                <p>
+                    This website is meant to help patients to easily locate the services they can require from a hospital.
+                </p>
+                <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                    <a href="https://github.com/Faith136/hospital" target="_blank" class="bg-pink-600 flex items-center px-4 py-2 w-max hover:brightness-110">
+                        <ion-icon name="logo-github"></ion-icon> View Code</a>
+                    <a href="https://hospital-coral-nine.vercel.app/" target="_blank" class="bg-purple-600 flex items-center px-4 py-2 w-max hover:brightness-110">Web App</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
 
-
-    <!--project section-->
-    <section class="pt-32" id="Projects">
-
-        <div class="flex flex-col items-center justify-items-center space-y-1">
-            <h class="text-4xl font-bold">My Portfolio </h>
-            <p class="font-semibold">
-                Some of my recent projects:
-            </p>
-        </div>
-        <ul class="w-full md:w-5/6 space-y-10 py-5 px-4">
-            <li class="flex flex-col md:flex-row items-center bg-pink-200 rounded overflow-hidden">
-                <div class="w-full md:w-1/3 h-60">
-                    <img class="h-full w-full object-cover" src="https://www.purbis.com/images/food-order.png" alt="Portfolio" />
-                </div>
-                <div class="w-full md:w-2/3 p-5">
-                    <h3 class="text-3xl font-bold mb-3">Restaurant Management System</h3>
-                    <p2>
-                        Restaurant management system is an application meant to help the restaurant managers to be able to carry their analytics tasks easier. I developed this project using react js, tailwind css and firebase. It has several modules including authentication,
-                        item selection, bill management and more.
-                    </p2>
-                    <div class="mt-8 font-semibold text-white flex items-center gap-2">
-                        <a href="https://github.com/Faith136/Bwibs" target="_blank" class="bg-pink-600 flex items-center px-4 py-2 w-max hover:brightness-110">
-                            <ion-icon name="logo-github"></ion-icon> View Code</a>
-                        <a href="https://bwibs.vercel.app/" target="_blank" class="bg-purple-600 flex items-center px-4 py-2 w-max hover:brightness-110">Web App</a>
-                    </div>
-                </div>
-            </li>
-            <li class="flex flex-col md:flex-row items-center bg-pink-200 rounded overflow-hidden">
-                <div class="w-full md:w-1/3 h-60">
-                    <img class="h-full w-full object-cover" src="https://i.pinimg.com/originals/69/7c/5a/697c5acf67ffe0bcdf9acc3ed9209d7f.png" alt="Portfolio" />
-                </div>
-                <div class="w-full md:w-2/3 p-5">
-                    <h3 class="text-3xl font-bold mb-3">HRMS</h3>
-                    <p2>
-                        Human resource management system is a web app that is meant to ease the work of HR by capturing all employees data just in a software. I considered CRUD methods using firebase and react js. Currently i am still working on it.
-                    </p2>
-                    <div class="mt-8 font-semibold text-white flex items-center gap-2">
-                        <a href="https://github.com/Faith136/hr" target="_blank" class="bg-pink-600 flex items-center px-4 py-2 w-max hover:brightness-110">
-                            <ion-icon name="logo-github"></ion-icon> View Code</a>
-                        <a href="#" target="_blank" class="bg-purple-600 flex items-center px-4 py-2 w-max hover:brightness-110">Web App</a>
-                    </div>
-                </div>
-            </li>
-            <li class="flex flex-col md:flex-row items-center bg-pink-200 rounded overflow-hidden">
-                <div class="w-full md:w-1/3 h-60">
-                    <img class="h-full w-full object-cover" src="images/Hospital-Icon-Image.png" alt="Portfolio" />
-                </div>
-                <div class="w-full md:w-2/3 p-5">
-                    <h3 class="text-3xl font-bold mb-3">HOSPITAL WEBSITE</h3>
-                    <p2>
-                        This website is meant to help patients to easy locate the services they can require from an hospital.
-                    </p2>
-                    <div class="mt-8 font-semibold text-white flex items-center gap-2">
-                        <a href="https://github.com/Faith136/hospital" target="_blank" class="bg-pink-600 flex items-center px-4 py-2 w-max hover:brightness-110">
-                            <ion-icon name="logo-github"></ion-icon> View Code</a>
-                        <a href="https://hospital-coral-nine.vercel.app/" target="_blank" class="bg-purple-600 flex items-center px-4 py-2 w-max hover:brightness-110">Web App</a>
-                    </div>
-                </div>
-            </li>
-
-        </ul>
-
-    </section>
     <!--services-->
     <section class="pt-12" id="Services">
         <div class="flex flex-col items-center justify-items-center space-y-1">
